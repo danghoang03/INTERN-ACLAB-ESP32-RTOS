@@ -179,6 +179,8 @@ void TaskLEDMoving(void *pvParameters) {
 // }
 
 void TaskMQTT(void *pvParameters) {
+  pinMode(A2, OUTPUT);
+  
   while(1){
     mqtt.loop();
     delay(1000);
